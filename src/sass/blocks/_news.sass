@@ -1,0 +1,107 @@
+.news
+  background-color: $background-color
+  &-block
+    margin-top: 147px
+    padding-bottom: 1px
+  &__title
+    display: inline-block
+    background-color: $main-color
+    position: relative
+    +bold
+    padding: 12px 54px
+    font-size: 28px
+    color: $text-cerd-button-color
+    text-transform: uppercase
+    top: -29px
+    margin: 0
+  &-cards 
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-left: 32px
+    margin-top: 28px
+  &__card
+    display: flex
+    flex-direction: column
+    width: 377px
+  &-name 
+    margin-top: 23px
+    display: flex
+    justify-content: space-between
+    &__title
+      font-size: 20px
+      line-height: 28px
+      text-transform: uppercase
+      +bold
+      &:hover
+        text-decoration: underline
+        cursor: pointer
+
+    &__date
+      display: flex
+      margin-right: 43px
+      font-size: 16px
+    &__number
+      +reg
+      padding: 2px 2px
+      background-color: $main-color
+      height: 25px
+      margin-top: 2px
+    &__month-year
+      padding-top: 5px
+      font-size: 15px
+  &__subtitle
+    font-size: 17px
+    line-height: 28px
+    opacity: 0.83
+    color: $text-cerd-button-color
+    padding-top: 13px
+    width: 310px
+    &:hover
+      text-decoration: underline
+      cursor: pointer
+  &-button
+    display: block
+    width: 291px
+    margin: auto
+    font-size: 20px
+    text-transform: uppercase
+    +reg
+    margin-top: 64px
+    padding: 17px 39px
+    background-color: $main-color
+    margin-bottom: 72px
+@media (max-width:1200px)
+  .news
+    &-block
+      padding-right: 25px
+    &__title
+      margin-left: 15px
+    &-cards 
+      justify-content: space-around
+    &__card
+      margin-bottom: 15px
+    &-img
+      padding-right: 10px
+@media (max-width:922px)
+  .news
+    &__subtitle,
+      &:hover
+        text-decoration: none
+        cursor: default
+    &-name
+      &__title
+        &:hover
+          text-decoration: none
+          cursor: default
+
+@media (max-width:720px)
+  .news
+    &-block
+      margin-top: 100px
+    &__subtitle
+      width: 300px
+    &-name
+      &__date
+        margin-right: 10px
+

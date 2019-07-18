@@ -1,0 +1,98 @@
+.footer
+  background-color: $black-color-00
+  // height: 134px
+  &-block
+    display: flex
+    justify-content: space-between
+    padding-bottom: 50px
+  &-address
+    margin-left: 32px
+    margin-top: 50px
+  &__map
+    margin-right: 8px
+  &__address
+    text-decoration: none
+    font-size: 20px
+    +bold
+    color: #fdfcfc
+  &-social 
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+    width: 98px
+  &__contactdetails
+    margin-top: 50px
+  &__post
+    font-size: 18px
+    text-decoration: none
+    color: #fdfcfc
+    margin-right: -7px
+    +bold
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      border: 1px solid
+      right: 30px
+      height: 12px
+      background-color: #ffffff
+      opacity: 0.5
+      left: 203px
+      top: 4px
+  &__tell
+    color: #fdfcfc
+    margin-right: -4px
+  &__image
+    margin-left: 48px
+@media (max-width:1200px)
+  .footer
+    &__contactdetails
+      padding-right: 10px
+    &__image
+      margin-left: 35px
+    &__post
+      &:before
+        left: 197px
+@media (max-width:960px)
+  .footer
+    &-block
+      width: 70%
+      margin: auto
+      flex-wrap: wrap
+      justify-content: space-around
+    &-social
+      margin-left: 10px
+      margin-right: 10px
+@media (max-width:610px)
+  .footer
+    &-block
+      width: 100%
+      margin: auto
+
+
+@media (max-width:454px)
+  .footer
+    &-block
+      width: 100%
+      padding-bottom: 15px
+    &-address
+      display: inline-block
+      margin: auto
+      margin-top: 15px
+      font-size: 15px
+    &-social
+      margin-top: 20px
+    &__contactdetails
+      margin-top: 20px
+    &__address
+      font-size: 15px
+    &__post
+      font-size: 12px
+      &:before
+        display: none
+    &__tell
+      font-size: 12px
+    &__image 
+      margin-left: 15px
+
+

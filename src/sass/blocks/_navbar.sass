@@ -1,0 +1,214 @@
+.navbar
+  background: url(../img/whywe/whywe-fon.jpg) repeat-y center right
+  background-size: 38%
+  &-block 
+    display: flex
+    justify-content: space-between
+  &-links 
+    display: flex
+    align-items: center
+    &__logo
+      margin-right: 135px
+      margin-left: 32px
+    &__link
+      text-decoration: none
+      color: $black-color-00
+      padding-right: 60px
+      font-size: 16px
+      +reg
+      position: relative
+      &:hover
+        color: $main-color
+        transition:  0.3s 
+      &:after
+        content: ""
+        display: block
+        background-color: $main-color
+        height: 2px
+        width: 0%
+        transition: 0.3s 
+        padding-top: 2px
+      &:hover:after
+        width: 100%
+      &:before
+        content: ''
+        position: absolute
+        border: 1px solid 
+        right: 30px
+        height: 12px
+        background-color: $black-color-00
+        opacity: 0.15
+      &:nth-child(6)
+        padding-right: 0
+        &:before
+          content: none
+  &-contacts
+    // background-color: $background-color
+    display: flex
+    align-items: center
+  &-tell 
+    justify-content: flex-start
+    &__img
+      padding-left: 40px
+    &__tel
+      text-decoration: none
+      color: $black-color-00
+      margin-right: 41px
+      font-size: 18px
+  &__button
+    margin-right: 7px
+    padding: 7px 17px
+    margin-top: 6px
+    +reg
+.menu
+  &-btn
+    display: none
+    // display: inline-block
+    height: 50px
+    width: 50px
+    background-color: $main-color
+    border-radius: 50%
+    position: relative
+  &-decoration
+    position: absolute
+    top: 50% 
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    width: 20px
+    height: 2px
+    background-color: $black-color-00
+    &:before,
+    &:after
+      content: ''
+      position: absolute
+      top: 50% 
+      margin-top: -1px
+      left: 50%
+      margin-left: -10px
+      width: 20px
+      height: 2px
+      background-color: $black-color-00
+      transition: 0.2s
+  &-nav
+    transition: 0.5s
+    transform-origin: right center
+    transform: scaleX(0) translateX(50%)
+    opacity: 0
+    &__link
+      text-decoration: none
+      color: $black-color-00
+      // display: block
+      display: flex
+      text-align: center
+    &_active
+      transform: scaleX(1) translate(0%)
+      opacity: 1
+      flex-direction: row
+
+
+
+
+
+
+.menu-decoration::before
+  transform: translateY(-5px)
+.menu-decoration::after
+  transform: translateY(5px)
+.menu-btn__active span
+  height: 0
+.menu-btn__active span:before
+  transform: rotate(45deg)
+.menu-btn__active span:after
+  transform: rotate(-45deg)
+
+// .menu-nav
+//   transition: 0.5s
+//   transform-origin: right center
+//   transform: scaleX(0) translateX(50%)
+//   opacity: 0
+// .menu-nav__link
+//   text-decoration: none
+//   color: $black-color-00
+//   display: block
+//   text-align: center
+
+.menu-nav_active
+  // transform: scaleX(1) translate(0%)
+  // opacity: 1
+
+
+@media (max-width:1200px)
+  .menu-btn
+    display: none
+  .navbar
+    &-contakts
+    &-links
+      &__logo
+        margin-right: 40px
+      &__link
+        padding-right: 40px
+        &:before
+          right: 25px
+    &-tell
+      display: block
+      &__img
+        padding-left: 20px
+@media (max-width:1010px)
+  .navbar
+    &-contacts
+      display: flex
+      flex-direction: column
+    &-block 
+    &-links 
+      &__logo
+        margin-right: 35px
+      &__link
+        padding-right: 35px
+        &:hover
+          color: $black-color-00
+        &:after
+          content: none
+        &:before
+          right: 16px
+    &-tell 
+      margin-top: 12px
+      // display: none
+    &__button
+      margin-left: -20px
+      margin-right: 1px
+      padding: 7px 37px
+      margin-top: 16px
+@media (max-width:860px)
+  .navbar
+    background: none
+    &-tell
+      margin-top: 12px
+  .menu
+    &-block
+      display: flex
+    &-btn
+      margin-top: 20px
+      display: inline-block
+  .navbar-links__link
+    display: none
+@media (max-width:480px)
+  .navbar
+    &-block
+      display: block
+    &-links 
+      justify-content: center
+    &__button
+      margin-bottom: 10px
+
+  
+
+   
+
+
+
+
+
+
+
+  

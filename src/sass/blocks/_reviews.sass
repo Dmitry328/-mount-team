@@ -1,0 +1,154 @@
+.reviews
+  background-color: $black-color-00
+  margin-top: 143px
+  &__title
+    background-color: $main-color
+    position: relative
+    +bold
+    padding: 12px 67px
+    font-size: 28px
+    color: $text-cerd-button-color
+    text-transform: uppercase
+    padding: 12px 63px
+    top: -13px
+.people
+  &-block
+    display: flex
+    justify-content: space-around
+  &__card
+    outline: none
+    display: flex
+    text-align: center
+    flex-direction: column
+    width: 470px
+    // height: 302px
+    margin-left: 32px
+    position: relative
+    &:before
+      content: ''
+      background: url('../img/reviews/before-people.jpg')
+      // background-size: 35px 35px
+      height: 35px
+      width: 35px
+      position: absolute
+      // border: 1px solid 
+      // right: 30px
+      // background-color: #fff
+      border-radius: 50%
+      right: 283px
+      top: 76px
+    &:nth-child(2n)
+      // padding-left: 107px
+  &__img
+    margin: auto
+    border-radius: 50%
+    height: 116px
+    width: 116px
+    margin-bottom: 13px
+    margin-top: 76px
+    margin-left: 175px
+  &__title
+    display: block
+    color: $main-color
+    font-size: 20px
+    line-height: 28px
+    margin-bottom: 15px
+    margin-right: 103px
+  &__subtitle
+    display: block
+    color: $text-people-subtitle
+    font-size: 20px
+    line-height: 28px
+    font-weight: 400
+    margin-bottom: 24px
+    max-width: 471px
+  &-assessment
+    display: flex
+    justify-content: space-between
+  &-like
+    display: flex
+    margin-bottom: 170px
+    &__like
+      margin-right: 5px
+      margin-left: 178px
+    &__number
+      color: #ffffff
+      font-size: 15px
+      margin-top: 5px
+      margin-right: 31px
+      +reg
+  &-dislike
+    display: flex
+    &__dislike
+      margin-right: 5px
+    &__number
+      color: #ffffff
+      font-size: 15px
+      margin-top: 5px
+      +reg
+  &-dots 
+    margin-bottom: 38px
+    right: 6px
+.slick
+    margin-right: 107px
+@media (max-width:1200px)
+  .reviews
+    &__title
+      margin-left: 15px
+  .slick-slide img
+    display: block
+    margin: auto
+    // margin-top: 76px
+    margin-bottom: 13px
+  .people
+    &__img
+      margin-left: none
+      // margin-top: 76px
+    &__card
+      padding-top: 20px
+      padding-right: 30px
+      &:last-child
+        padding-left: 40px
+      &:before
+        display: none
+    &__title
+      margin-right: 0
+    &__subtitle
+      margin: auto
+      padding-bottom: 20px
+    &-like
+      width: 110px
+      margin: auto
+      // padding-bottom: 55px
+      margin-bottom: 70px
+      &__like
+        margin-top: 0
+    &-dots
+      margin-bottom: 10px
+      padding-left: 10px
+@media (max-width:550px)
+  .people
+    &__title
+      font-size: 19px
+    &__subtitle
+      font-size: 17px
+@media (max-width:461px)
+  .people
+    &__title
+      font-size: 18px
+      margin-bottom: 5px
+    &__subtitle
+      font-size: 14px
+      line-height: 25px
+      // padding-bottom: 
+@media (max-width:390px)
+  .people
+    &__title
+      font-size: 17px
+      margin-bottom: 5px
+    &__subtitle
+      font-size: 11px
+      line-height: 20px
+      // padding-bottom: 
+
+

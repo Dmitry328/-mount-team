@@ -1,0 +1,131 @@
+.slider
+  &-slider
+    margin: 0
+    padding: 0
+    z-index: 1
+  &__item
+    
+  &__image
+    height: 724px
+    object-fit: cover
+    width: auto
+    
+.hero
+  &-block 
+    z-index: 2
+    position: absolute
+    padding-left: 32px
+  &__title
+    font-family: 'Proxima Nova Light'
+    text-transform: uppercase
+    +bold
+    padding-top: 202px
+    color: $main-color
+    font-size: 35px
+    margin: 0
+  &__subtitle
+    display: inline-block
+    font-size: 34px
+    margin-top: 10px
+    color: $white-color
+    +reg
+  &__discription
+    display: inline-block
+    line-height: 28px
+    color: $hero-text-color
+    opacity: 0.42
+    font-size: 20px
+    margin-top: 25px 
+    +reg
+  &-button 
+    display: block
+    font-size: 18px
+    color: $text-button-color
+    text-transform: uppercase
+    line-height: 40px
+    padding: 2px 38px
+    margin-top: 46px
+    +bold
+
+.selector:nth-of-type(n)
+.dots 
+  position: absolute
+  bottom: 10px
+  right: 22px
+  width: 100%
+  text-align: center
+  cursor: pointer
+.dots li 
+  height: 20px
+  width: 20px
+  display: inline-block
+  margin: 0 5px
+  background-color: #ffffff
+  content: none
+.dots li button 
+  width: 20px
+  height: 20px
+  cursor: pointer
+  color: transparent
+  border: 5px
+  outline: none
+  background: transparent
+.dots li button:hover, 
+.dots li button:focus 
+  outline: none
+
+.dots .slick-active 
+  background-color: $main-color
+
+.dots li button:hover:before, 
+.dots li button:focus:before 
+  // opacity: 1
+.dots li button:before 
+  content: url('https://pp.userapi.com/c851332/v851332724/146a7e/zm-9ny4c08I.jpg')
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+.dots li.slick-active button:before 
+  opacity: 0.25
+.dots li a 
+  display: none 
+
+@media (max-width:1200px)
+  .hero
+    &-block 
+      padding-right: 20px
+@media (max-width:960px)
+  .hero
+    &__title
+      padding-top: 170px
+@media (max-width:640px)
+  .hero
+    &__title
+      font-size: 30px
+    &__subtitle
+      font-size: 29px
+    &__discription
+      margin-top: 20px
+      line-height: 23px
+    &-button
+      margin-top: 20px
+@media (max-width:420px)
+  .hero
+    &__title
+      font-size: 22px
+      padding-top: 40px
+    &__subtitle
+      font-size: 21px
+      line-height: 25px
+    &__discription
+      font-size: 18px
+      margin-top: 15px
+      line-height: 21px
+  .slider
+    &__image
+      height: 500px
+
+
+
+
+
+

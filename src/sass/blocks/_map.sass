@@ -1,0 +1,148 @@
+.map
+  // display: flex
+  height: 666px
+  width: 100% 
+  position: relative
+  &-modal 
+    position: absolute
+    width: 397px
+    height: 385px
+    background-color: #ffffff
+    top: 137px
+    left: 222px
+    box-shadow: 2px 0 18px 3px rgba(0,0,0,0.6)
+.modal
+  &-description
+    margin-left: 100px
+    margin-top: 42px
+    margin-bottom: 46px
+  &-title 
+    text-transform: uppercase
+    font-size: 20px
+    color: $text-button-color
+  &-subtitle
+    color: $main-color
+    font-size: 20px
+    text-transform: uppercase
+  &__button
+    margin-left: 47px
+    padding: 15px 59px
+    font-size: 20px
+    text-transform: uppercase
+    line-height: 28px
+    +bold
+
+.username
+  position: relative
+  display: block
+  border: none
+  outline: none
+  width: 76%
+  margin-left: 48px
+  margin-bottom: 41px
+  padding-bottom: 6px
+  border-bottom: 1px solid $black-color-00
+  &::-webkit-input-placeholder
+    opacity: .65
+    color: $black-color-00
+    font-size: 18px
+    font-style: italic
+    font-weight: 400
+    line-height: 28px
+    +reg
+.phone
+  display: block
+  border: none
+  outline: none
+  width: 76%
+  margin-left: 48px
+  border-bottom: 1px solid $black-color-00
+  padding-bottom: 6px
+  margin-bottom: 65px
+  &::-webkit-input-placeholder
+    opacity: .65
+    color: $black-color-00
+    font-size: 18px
+    font-style: italic
+    font-weight: 400
+    line-height: 28px
+    +reg
+#username-error,
+  margin-left: 50px
+  position: relative
+  top: -44px
+  color: red
+  font-size: 11px
+  +bold
+#phone-error
+  margin-left: 50px
+  position: relative
+  top: -66px
+  color: red
+  font-size: 11px
+  +bold
+@media (max-width:960px)
+  .map
+    &-modal
+      left: 70px
+@media (max-width:720px)
+  .map
+    &-modal
+      left: 40px
+      top: 40px
+    &-modal input.username 
+      margin: auto
+      margin-bottom: 41px
+    &-modal input.phone
+      margin: auto
+      margin-bottom: 50px
+    &-modal h1.modal-description
+      width: 198px
+      margin: auto
+      margin-bottom: 40px
+      margin-top: 42px
+    &-modal #phone-error
+      top: -53px
+    &-modal button.button.modal__button
+      padding: 15px 53px
+@media (max-width:570px)
+  .map
+    &-modal
+      height: 200px
+      width: 240px
+    &-modal h1.modal-description
+      width: 160px
+      margin-top: 10px
+      margin-bottom: 15px
+    &-modal span.modal-title,
+    &-modal span.modal-subtitle 
+      font-size: 16px
+    &-modal input.username,
+    &-modal input.phone
+      margin-bottom: 15px
+      height: 17px
+      width: 210px
+      &::-webkit-input-placeholder
+        font-size: 15px
+    &-modal button.button.modal__button
+      display: flex
+      margin: auto
+      padding: 5px 27px   
+      font-size: 16px
+    &-modal #username-error
+      margin-left: 19px
+      top: -20px
+    &-modal #phone-error
+      margin-left: 19px
+      top: -20px
+
+      
+
+
+
+
+
+
+
+
+
